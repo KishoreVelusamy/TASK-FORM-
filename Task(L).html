@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+    <link rel="stylesheet" href="Task(L).css">
+    <script src="./Task(L).js"></script>
+</head>
+<body>
+    <form>
+        <div>
+        <div class="alpha">
+            <label for="#">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="20" required>
+        </div>
+        <div class="alpha">
+            <label for="#">Gender</label>
+            <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required>
+        </div>
+        <div class="alpha">
+            <label for="#">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age" required>
+        </div>
+        <div class="alpha">
+            <label for="#">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="alpha">
+            <label for="#">Password</label>
+            <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  name="Password" id="Password" required>
+        </div>
+        <div id="add_field"></div>
+        <div class="alpha">
+            <label for="#">Add New field</label>
+            <select id="choices">
+                <option value="">Select</option>
+                <option value="input">Input</option>
+                <option value="radio">Radio</option>
+                <option value="button">Button</option>
+                <option value="h1">h1</option>
+            </select>
+        </div>
+        <input
+            type="button"
+            id="add"
+            value="Add"
+            onclick="addNewFields(document.getElementById('choices').value)"/>
+        <button>Submit</button> 
+        <button type="reset">Reset</button>
+    </form>
+</div>
+</body>
+</html>
