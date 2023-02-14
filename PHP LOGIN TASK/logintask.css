@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 0%;
+}
+h1{
+    text-align: center;
+    padding-top: 10%;
+}
+body{
+    background: linear-gradient(to right,rgb(33, 184, 215),pink);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 10px 20px blue;
+    border-radius: 50px 0 50px 0;
+}
+input{
+    opacity: 0.6;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 3%;
+}
+label{
+    margin-left: 40px;
+    background: transparent;
+    padding-top: 5%;
+}
+button{
+    width: 150px;
+    padding: 4px;
+    margin-top: 10%;
+    margin-left: 90px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+form::before{
+    content: '';
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    height: 40%;
+    width: 100px;
+    height: 100px;
+    background: magenta;
+    border-radius: 60%;
+    z-index: -1;
+    opacity: .3;
+}
+form::after{
+    content: '';
+    position: absolute;
+    top: 2%;
+    right: 30%;
+    height: 40%;
+    width: 100px;
+    height: 100px;
+    background: magenta;
+    border-radius: 60%;
+    z-index: -1;
+    opacity: .3;
+}
+button:hover{
+    background-color: rgb(32, 193, 218);
+    color: rgb(189, 17, 114);
+}
