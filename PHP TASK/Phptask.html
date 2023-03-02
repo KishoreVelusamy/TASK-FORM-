@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="formtask.css">
+</head>
+<body>
+    <form>
+        <h1>FORM</h1>
+            <label for="formtask.php">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="20" required>
+            <label for="#">Gender</label>
+            <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required>
+            <label for="#">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age" required>
+            <label for="#">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            <label for="#">Password</label>
+            <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  name="password" id="Password" required>
+            <button>Submit</button>
+    </form>
+</body>
+</html>
